@@ -331,7 +331,7 @@ body {
         grid-template-areas: 'you-picked ai-picked'
         'you-title ai-title';
         max-width: 375px;
-        margin: 7em auto;
+        margin: 7em auto 0em;
     }
 
     .results__heading {
@@ -339,8 +339,8 @@ body {
     }
 
     .results__result {
-        min-width: 6.5rem;
-        min-height: 6.5rem;
+        min-width: 5rem;
+        min-height: 5rem;
         background: #16213d;
         border-radius: 50%;
         transform: scale(1.1);
@@ -352,18 +352,38 @@ body {
         grid-template-areas: 
         "you-picked ai-picked"
         "you-title ai-title"
-        "result-winner";
+        "result-winner result-winner";
+    }
+
+    .results__winner {
+        position: relative;
+        bottom: 6em;
     }
 
     .results__text {
-        font-size: 1rem;
-        padding-bottom: 0;
+        font-size: 3rem;
+        padding-bottom: .5rem;
         text-transform: uppercase;
     }
 
     .play-again {
         font-size: 1rem;
+        padding: 0.6rem 2rem;
     }
+
+    .winner .choice::after {
+        box-shadow: 0 0 0 20px #293251,
+                    0 0 0 40px #232c4b,
+                    0 0 0 70px #1e2949;
+    
+        opacity: .07;
+        animation: winner 1s ease forwards;
+    }
+
+    .choice::after {
+        z-index: -2;
+    }
+    
 }
 
 /* Rules */
@@ -395,7 +415,8 @@ body {
         bottom: 1rem;
         left: 50%;
         transform: translate(-50%,0);
-    }
+        font-size: 0.8rem;
+        padding: .6rem 1rem;
 }
 
 .modal {
