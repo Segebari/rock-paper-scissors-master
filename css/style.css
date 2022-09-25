@@ -53,6 +53,7 @@ body {
     
 }
 
+
 .score {
     padding: 1em;
     font-weight: 700;
@@ -71,6 +72,34 @@ body {
 .score__no {
     font-size: 3rem;
     color: var(--dark-text);
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .header {
+        margin: 2em 1.5em 1em 1.5em;
+        padding: 1em 1em 1em 1.5em;
+        align-items: center;
+        height: 100px;
+        border-radius: .5em;
+    }
+
+    .logo {
+        width: 100px;
+        height: 65px;
+    }
+
+    .score {
+        width: 37%;
+        padding: 0.4em;
+    }
+
+    .score__no {
+        font-size: 2.4rem;
+    }
 }
 
 
@@ -171,6 +200,28 @@ body {
     grid-area: scissors;
 }
 
+
+@media (max-width: 375px) {
+    .game {
+        margin: auto 2em;
+        gap: 2.5em;
+    }
+
+    .game::before {
+        left: -3%;
+        top: 29%;
+    }
+    
+    .game img {
+        width: 36px;
+        height: 40px;
+    }
+
+    .choice {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}
 
 
 /* Results */
@@ -292,8 +343,16 @@ body {
     cursor: pointer;
 }
 
+
 .rules-btn:focus {
     border: 2px solid #fff;
+}
+
+@media (max-width: 375px) {
+    .rules-btn {
+        right: 50%;
+        left: auto;
+    }
 }
 
 .modal {
@@ -308,6 +367,12 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+}
+
+@media (max-width: 375px) {
+    .modal {
+        background-color: #fff;  
+    }
 }
 
 .show-modal {
@@ -327,9 +392,25 @@ body {
     padding: 2rem 2rem 1rem;
 }
 
+@media (max-width: 375px) {
+    .modal__header {
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem 5rem;
+        margin-top: -7em;
+    }
+}
+
+
 .modal__heading {
     font-size: 1.5rem;
     color: var(--dark-text);
+}
+
+@media (max-width: 375px) {
+    .modal__heading {
+        text-transform: uppercase;
+    }
 }
 
 .close-btn {
@@ -339,8 +420,24 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 375px) {
+    .close-btn {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 4em;
+    }
+}
+
 .rules-img {
     padding: 2rem 4rem;
+}
+
+@media (max-width: 375px) {
+    .rules-img {
+        padding: 0;
+    }
 }
 
 /* Utilities */
