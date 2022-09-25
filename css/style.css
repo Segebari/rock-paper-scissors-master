@@ -74,7 +74,7 @@ body {
     color: var(--dark-text);
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .container {
         max-width: 375px;
     }
@@ -100,6 +100,36 @@ body {
     .score__no {
         font-size: 2.4rem;
     }
+}
+
+@media (min-width: 475px) and (max-width: 719px) {
+
+    .container {
+        max-width: 719px;
+    }
+
+    .header {
+        margin: 2em 1.5em 1em 1.5em;
+        padding: 1em 1em 1em 1.5em;
+        align-items: center;
+        height: 120px;
+        border-radius: .5em;
+    }
+
+    .logo {
+        width: 120px;
+        height: 80px;
+    }
+
+    .score {
+        width: 20%;
+        padding: 0.4em;
+    }
+
+    .score__no {
+        font-size: 2.4rem;
+    }
+
 }
 
 
@@ -201,7 +231,7 @@ body {
 }
 
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .game {
         margin: auto 2em;
         gap: 2.5em;
@@ -323,7 +353,7 @@ body {
     border: 2px solid var(--header-outline);
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .results {
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
@@ -410,13 +440,14 @@ body {
     border: 2px solid #fff;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .rules-btn {
         bottom: 1rem;
         left: 50%;
         transform: translate(-50%,0);
         font-size: 0.8rem;
         padding: .6rem 1rem;
+    }
 }
 
 .modal {
@@ -433,7 +464,7 @@ body {
     pointer-events: none;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .modal {
         background-color: #fff;  
     }
@@ -456,7 +487,7 @@ body {
     padding: 2rem 2rem 1rem;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .modal__header {
         justify-content: center;
         align-items: center;
@@ -471,7 +502,7 @@ body {
     color: var(--dark-text);
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .modal__heading {
         text-transform: uppercase;
     }
@@ -484,7 +515,7 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .close-btn {
         margin: 0 auto;
         left: 0;
@@ -498,7 +529,7 @@ body {
     padding: 2rem 4rem;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 474px) {
     .rules-img {
         padding: 0;
     }
@@ -512,4 +543,8 @@ body {
 
 .hidden {
     display: none;
+}
+
+@-ms-viewport{
+    width: device-width;
 }
