@@ -331,10 +331,37 @@ body {
         grid-template-areas: 'you-picked ai-picked'
         'you-title ai-title';
         max-width: 375px;
-        margin: 4em auto;
+        margin: 7em auto;
     }
 
     .results__heading {
+        font-size: 1rem;
+    }
+
+    .results__result {
+        min-width: 6.5rem;
+        min-height: 6.5rem;
+        background: #16213d;
+        border-radius: 50%;
+        transform: scale(1.1);
+        z-index: -1;
+    }
+
+    .results.show-winner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "you-picked ai-picked"
+        "you-title ai-title"
+        "result-winner";
+    }
+
+    .results__text {
+        font-size: 1rem;
+        padding-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    .play-again {
         font-size: 1rem;
     }
 }
