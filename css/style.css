@@ -212,9 +212,8 @@ body {
         top: 29%;
     }
     
-    .game img {
-        width: 36px;
-        height: 40px;
+    .choice img {
+        transform: scale(0.7);
     }
 
     .choice {
