@@ -323,6 +323,22 @@ body {
     border: 2px solid var(--header-outline);
 }
 
+@media (max-width: 375px) {
+    .results {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        place-items: center;
+        grid-template-areas: 'you-picked ai-picked'
+        'you-title ai-title';
+        max-width: 375px;
+        margin: 4em auto;
+    }
+
+    .results__heading {
+        font-size: 1rem;
+    }
+}
+
 /* Rules */
 
 
