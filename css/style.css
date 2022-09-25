@@ -208,7 +208,7 @@ body {
     }
 
     .game::before {
-        left: -3%;
+        left: -1.1%;
         top: 29%;
     }
     
@@ -350,8 +350,9 @@ body {
 
 @media (max-width: 375px) {
     .rules-btn {
-        right: 50%;
-        left: auto;
+        bottom: 1rem;
+        left: 50%;
+        transform: translate(-50%,0);
     }
 }
 
